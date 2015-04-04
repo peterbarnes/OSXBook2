@@ -17,8 +17,15 @@
         NSLog(@"Init");
         
         _speechSynth = [[NSSpeechSynthesizer alloc] initWithVoice:nil];
+        
+        [_speechSynth setDelegate:self];
     }
     return self;
+}
+
+- (void)speechSynthesizer:(NSSpeechSynthesizer *)sender didFinishSpeaking:(BOOL)finishedSpeaking
+{
+    NSLog(@"finishedSpeaking = %d", finishedSpeaking);
 }
 
 - (void)viewDidLoad {
