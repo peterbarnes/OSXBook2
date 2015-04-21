@@ -1,8 +1,8 @@
 //
 //  Document.m
-//  RaiseMan
+//  RaiseMan2
 //
-//  Created by Peter Barnes on 4/2/15.
+//  Created by Peter Barnes on 4/16/15.
 //  Copyright (c) 2015 Peter Barnes. All rights reserved.
 //
 
@@ -14,21 +14,6 @@
 
 @implementation Document
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        self.employees = [[NSMutableArray alloc] init];
-    }
-    return self;
-}
-
-//- (void)setEmployees:(NSMutableArray *)a
-//{
-//    if (a == self.employees)
-//        return;
-//    
-//    self.employees = a;
-//}
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.

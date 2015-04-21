@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray *employees;
 
+- (void)setEmployees:(NSMutableArray *)a;
+
 @end
 
